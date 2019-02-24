@@ -1,0 +1,82 @@
+body {
+    background-color: #DADADA;
+  }
+  body > .grid {
+    height: 100%;
+  }
+  .image {
+    margin-top: -100px;
+  }
+  .column {
+    max-width: 450px;
+  }
+
+  .ui.inverted.vertical.segment {
+    height: 100vh;
+  }
+  .ui.inverted.vertical.segment h1.header.item {
+    font-size: 2em;
+  }
+  .ui.inverted.vertical.segment a.item {
+    font-size: 1.2em;
+  }
+  .ui.inverted.vertical.segment .ui.text.container {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .ui.inverted.vertical.segment .ui.text.container h1.header {
+    font-size: 3em;
+  }
+  .ui.inverted.vertical.segment .ui.text.container p {
+    font-size: 1.6em;
+    line-height: 1.6;
+  }
+  .ui.inverted.vertical.segment .ui.footer.segment {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    color: gray;
+  }
+  .ui.inverted.vertical.segment .ui.footer.segment a {
+    color: white;
+  }
+  .ui.inverted.form .ui.meduim.form{
+    height: 50%;
+    width: 50%;
+    margin: auto 380px;
+    position: relative;
+
+  }
+   
+  
+ .item{
+   font-size:1.5em;
+   color: grey;
+  }
+ .temp {
+  
+  font-family: sans-serif;
+ }
+
+ .hum {
+
+  font-family: sans-serif;
+ }
+
+ .ui.inverted.top.attached.segment{
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+}

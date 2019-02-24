@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Temperature and Humidity monitor</title>
+    {{!--<link rel="stylesheet" href="/stylesheet/semantic.css">--}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    
+</head>
+
+    <body class="template">
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui container">
+        <div class="ui massive borderless inverted menu">
+          
+          <h1 class="header item"><i class="sun outline icon"></i>
+            Monitor App
+          </h1>
+          <div class="right item">
+            <div class="ui massive secondary inverted menu">
+              <a href="/home" class=" item">Home</a>
+              {{#if isAuthenticated}}
+                <a href="/dht" class="active item">DHT</a>
+                <a href="/logout" class="item">Logout</a>
+              {{else}}
+                <a href="/login" class="item">Login</a>
+                <a href="/register" class="item">register</a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,41 @@
+{{> header }}
+
+<div class="ui inverted segment">
+    <h1>{{title}}</h1>
+
+      {{#if errors}}
+        {{#each errors}}
+          <div class="alert alert-danger">
+          {{this.msg}}
+          </div>
+        {{/each}}
+      {{/if}}
+    <div class="ui inverted form">
+      
+      <form class="ui meduim form" action="/register" method="POST">
+      
+          <div class="field">
+            <label>Username</label>
+            <input name="username" placeholder="Username here" type="text">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input name="email" placeholder="Email here" type="email">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input name="password" placeholder="password" type="password">
+          </div>
+          <div class="field">
+            <label>Re-enter Password</label>
+            <input name="matchPassword" placeholder="confirm passowrd" type="password">
+          </div>
+         
+        <button type="submit" class="ui submit button">Submit</button>
+        
+      
+      </div>
+</div>
+
+{{> footer }}
+

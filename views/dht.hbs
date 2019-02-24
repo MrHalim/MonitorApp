@@ -1,0 +1,30 @@
+{{> header }}
+
+  
+	<div class="ui main rounded inverted container segment">
+		
+		<h2> Temperature and humidity monitor</h2>
+	{{#each data}}
+		
+		<div class="ui inverted  top attached segment">
+     			<div class="item"><span class="temp">Temperature</span></div>
+			    <hr>
+      			<div class="item"><strong>{{temperature}} °C </strong></div>
+    			<hr>
+     			  <div class="item"><span class="hum">Humidity</div>
+			    <hr>
+      			<div class="item"><strong>{{humidity}} %</strong></div>
+      		<hr>
+      			<div class="item"><strong>{{created_date}}</strong></div>
+    		</div>
+	
+
+		
+	{{/each}}
+	
+	<div class="button">
+		<a href="/dht"> <button class="ui inverted button">Refresh</button></a>
+	</div>
+	</div>
+
+{{> footer }}
