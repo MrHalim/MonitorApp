@@ -42,5 +42,10 @@ Here is my experiment on reading the temperature and humidity from Raspberry pi 
   <p> There is a file on model directory that contain requirement to create database and other tables "createdbandtable.txt"</p>
  </div>
 <div>
-  <p> Finnaly Restart your web app and access url, you will see the result </p>
- </div>
+  <h3> Finnaly for the usage </h3>
+  <ol>
+    <li>Install dependencies: npm install</li>
+    <li>Start the server: node app.js </li>
+    <li> Access url, you will see the result http://localhost:3333 </li>
+  </ol>
+</div>
